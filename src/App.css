@@ -1,3 +1,11 @@
+/* The following lines require Tailwind CSS processing.
+   Make sure your build tool (like PostCSS with Tailwind) is configured.
+   If you want to avoid errors in plain CSS, remove or comment out these lines. */
+
+/* @tailwind base; */
+/* @tailwind components; */
+/* @tailwind utilities; */
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
