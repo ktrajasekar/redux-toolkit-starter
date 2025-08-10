@@ -27,10 +27,10 @@ const CartPage: React.FC = () => {
                             {cartItems.map((item) => (
                                 <tr key={item.product.id} className="border-b hover:bg-gray-50">
                                     <td className="p-3">{item.product.name}</td>
-                                    <td className="p-3 text-center">${item.product.price}</td>
+                                    <td className="p-3 text-center">₹{item.product.price}</td>
                                     <td className="p-3 text-center">{item.quantity}</td>
                                     <td className="p-3 text-center">
-                                        ${item.product.price * item.quantity}
+                                        ₹{item.product.price * item.quantity}
                                     </td>
                                 </tr>
                             ))}
@@ -40,7 +40,7 @@ const CartPage: React.FC = () => {
                     <div className="flex justify-end mt-4">
                         <div className="text-right">
                             <p className="text-lg font-semibold">
-                                Total: <span className="text-blue-600">${total}</span>
+                                Total: <span className="text-blue-600">₹{total}</span>
                             </p>
                             <button className="mt-3 px-5 py-2 bg-blue-600 rounded-lg hover:bg-blue-700">
                                 Checkout
