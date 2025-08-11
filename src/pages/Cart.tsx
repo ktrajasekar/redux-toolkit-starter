@@ -27,7 +27,7 @@ const CartPage: React.FC = () => {
                             {cartItems.map((item) => (
                                 <tr key={item.product.id} className="border-b hover:bg-gray-50">
                                     <td className="p-3">{item.product.name}</td>
-                                    <td className="p-3 text-center">₹{item.product.price}</td>
+                                    <td className="p-3 text-center">${item.product.price}</td>
                                     <td className="p-3 text-center">{item.quantity}</td>
                                     <td className="p-3 text-center">
                                         ₹{item.product.price * item.quantity}
@@ -42,7 +42,7 @@ const CartPage: React.FC = () => {
                             <p className="text-lg font-semibold">
                                 Total: <span className="text-blue-600">₹{total}</span>
                             </p>
-                            <button className="mt-3 px-5 py-2 bg-blue-600 rounded-lg hover:bg-blue-700">
+                            <button className="mt-3 px-5 py-2 bg-blue-600 rounded-lg hover:bg-blue-700 text-white">
                                 Checkout
                             </button>
                         </div>

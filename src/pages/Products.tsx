@@ -18,10 +18,10 @@ const Products: React.FC = () => {
     return (
         <>
             {PRODUCTS.map(product => (
-                <div key={product.id}>
+                <div key={product.id} className='grid grid-cols-3 gap-4 m-8 '>
                     <h2>{product.name}</h2>
                     <p>₹{product.price}</p>
-                    <button onClick={() => dispatch(addToCart(product))}>Add to Cart</button>
+                    <button onClick={() => dispatch(addToCart(product))} className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>Add to Cart</button>
                 </div>
             ))}
 
